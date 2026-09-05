@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Terminal from './components/Terminal'
 import HomeSection from './components/sections/HomeSection'
 import AboutSection from './components/sections/AboutSection'
