@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react'
-import type { TerminalState, CommandResult } from '../types'
 import { findCommand } from '../data/commands'
 
 export function useTerminal() {
@@ -34,8 +33,8 @@ export function useTerminal() {
       return
     }
 
-    const result: CommandResult = command.action()
-    setHistory(prev => [...prev, result.output as string])
+    const result = command.action()
+    setHistory(prev => [...prev, result.output])
     
     // Map command to section
     const sectionMap: Record<string, string> = {
