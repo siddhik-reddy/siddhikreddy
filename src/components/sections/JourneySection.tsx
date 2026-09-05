@@ -1,5 +1,5 @@
-import React from 'react'
 import { journeyEvents } from '../../data/journey'
+import type { JourneyEvent } from '../../types'
 
 export default function JourneySection() {
   return (
@@ -10,7 +10,7 @@ export default function JourneySection() {
         </h2>
         
         <div className="journey-timeline">
-          {journeyEvents.map((event, index) => (
+          {journeyEvents.map((event: JourneyEvent, index: number) => (
             <div key={index} className="journey-event">
               <div className="journey-year">{event.year}</div>
               <div className="journey-content">
