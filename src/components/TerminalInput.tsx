@@ -1,4 +1,4 @@
-import React, { useState, useRef, KeyboardEvent } from 'react'
+import { useRef, KeyboardEvent } from 'react'
 
 interface TerminalInputProps {
   value: string
