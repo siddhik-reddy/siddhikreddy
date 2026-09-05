@@ -1,5 +1,5 @@
-import React from 'react'
 import { skillGroups } from '../../data/skills'
+import type { SkillGroup } from '../../types'
 
 export default function SkillsSection() {
   return (
@@ -10,12 +10,12 @@ export default function SkillsSection() {
         </h2>
         
         <div className="skills-grid">
-          {skillGroups.map(group => (
+          {skillGroups.map((group: SkillGroup) => (
             <div key={group.category} className="skill-group">
               <h3 className="skill-group-title">{group.category}</h3>
               
               <div className="skill-list">
-                {group.skills.map(skill => (
+                {group.skills.map((skill) => (
                   <div key={skill.name} className="skill-item">
                     <div className="skill-header">
                       <span className="skill-name">{skill.name}</span>
