@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface MayaAvatarProps {
   state?: 'idle' | 'thinking' | 'speaking'
 }
