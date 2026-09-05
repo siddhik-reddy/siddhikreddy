@@ -1,6 +1,6 @@
-import React from 'react'
 import { projects } from '../../data/projects'
 import MayaSpeech from '../MayaSpeech'
+import type { Project } from '../../types'
 
 export default function ProjectsSection() {
   return (
@@ -16,7 +16,7 @@ export default function ProjectsSection() {
         />
         
         <div className="projects-grid">
-          {projects.map(project => (
+          {projects.map((project: Project) => (
             <article key={project.id} className="project-card">
               <div className="project-header">
                 <h3 className="project-name">{project.name}</h3>
@@ -42,7 +42,7 @@ export default function ProjectsSection() {
               <div className="project-tech">
                 <h4>Technology Stack</h4>
                 <div className="tech-tags">
-                  {project.technologies.map(tech => (
+                  {project.technologies.map((tech: string) => (
                     <span key={tech} className="tech-tag">{tech}</span>
                   ))}
                 </div>
