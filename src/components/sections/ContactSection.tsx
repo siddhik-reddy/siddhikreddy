@@ -1,4 +1,3 @@
-import React from 'react'
 import MayaSpeech from '../MayaSpeech'
 
 export default function ContactSection() {
@@ -15,13 +14,13 @@ export default function ContactSection() {
         />
         
         <div className="contact-actions">
-          <a href="mailto:your.email@example.com" className="btn-primary">
+          <a href="mailto:siddhikreddy@example.com" className="btn-primary">
             Email
           </a>
-          <a href="https://linkedin.com/in/yourusername" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/siddhikreddy" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/yourusername" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/siddhik-reddy" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>
