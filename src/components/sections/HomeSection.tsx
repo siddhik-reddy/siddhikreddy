@@ -1,4 +1,3 @@
-import React from 'react'
 import MayaSpeech from '../MayaSpeech'
 
 export default function HomeSection() {
@@ -24,10 +23,10 @@ export default function HomeSection() {
           <button className="btn-primary" onClick={() => document.getElementById('projects')?.scrollIntoView()}>
             View Projects
           </button>
-          <a href="https://github.com/yourusername" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/siddhik-reddy" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/siddhikreddy" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>
