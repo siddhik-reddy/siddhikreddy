@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef, ReactNode } from 'react'
 import { useTerminal } from '../hooks/useTerminal'
 import TerminalInput from './TerminalInput'
 import MayaAvatar from './MayaAvatar'
 import MayaSpeech from './MayaSpeech'
 
 interface TerminalProps {
-  children?: React.ReactNode
+  children?: ReactNode
 }
 
 export default function Terminal({ children }: TerminalProps) {
