@@ -1,12 +1,12 @@
-import React from 'react'
 import { learningItems } from '../../data/learning'
+import type { LearningItem } from '../../types'
 
 export default function LearningSection() {
-  const completed = learningItems.filter(item => item.status === 'completed')
-  const inProgress = learningItems.filter(item => item.status === 'in-progress')
-  const planned = learningItems.filter(item => item.status === 'planned')
+  const completed = learningItems.filter((item: LearningItem) => item.status === 'completed')
+  const inProgress = learningItems.filter((item: LearningItem) => item.status === 'in-progress')
+  const planned = learningItems.filter((item: LearningItem) => item.status === 'planned')
 
-  const renderSection = (title: string, items: typeof learningItems) => (
+  const renderSection = (title: string, items: LearningItem[]) => (
     <div className="learning-group">
       <h3 className="learning-group-title">{title}</h3>
       <ul className="learning-list">
